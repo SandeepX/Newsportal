@@ -1,0 +1,14 @@
+Options -Indexes
+#Options +MultiViews
+
+##DefaultType application/x-httpd-php
+
+
+ErrorDocument 403 http://newsportal.mor/admin
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule (.*) $1.php [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule (.*) $1.html [L]

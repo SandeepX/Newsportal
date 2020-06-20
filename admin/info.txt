@@ -1,0 +1,26 @@
+Gallery[
+	id
+	name
+	featured_image
+	image_description
+	image{
+		id
+		foreign_key
+		image_title
+		status
+		updated_date
+		created_date
+	}
+	status
+	updated_date
+	created_date
+]
+
+VIDEO{
+	id
+	name
+	url
+	video_description
+	created_date
+	updated_date
+}
